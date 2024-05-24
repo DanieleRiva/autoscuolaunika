@@ -10,10 +10,31 @@ body {
 
 :root {
     --color-background: #fff;
+    --color-background-secondary: #454545;
     --color-primary: #4051B0;
     --color-secondary: #FFE516;
     --font-black: #000;
     --font-white: #fff;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secondary);
 }
 
 .website-wrapper {
@@ -39,6 +60,13 @@ body {
     border-radius: 20px;
     margin: auto;
     text-decoration: none;
+    opacity: 75%;
+    box-shadow: 5px 5px 15px var(--font-black);
+    transition: all .3s;
+}
+
+.header:hover {
+    opacity: 100%;
 }
 
 .header a {
@@ -125,6 +153,7 @@ body {
     transition: all .2s;
     background-size: 100% 400%;
     background-position: 100% 0%;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 25%);
 }
 
 .hero-title a:hover {
@@ -132,18 +161,79 @@ body {
     background-position: 100% 50%;
 }
 
-/* .hero-title a:after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    background-image: linear-gradient(135deg, rgba(64, 81, 176, 1) 55%, rgba(255, 229, 22, 1) 100%);
-    opacity: 0;
-    transition: all .3s ease-in-out;
+.servizi-section {
+    text-align: center;
+    margin-top: 5rem;
 }
 
-.hero-title a:hover:after {
-    opacity: 1;
-} */
+.servizi-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 6rem;
+}
+
+.servizio-card {
+    width: 198px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 8px 50px 6px rgba(0, 0, 0, 25%);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    transition: all .3s;
+    margin-bottom: 5rem;
+}
+
+.servizio-card:hover {
+    background-color: var(--color-background-secondary);
+    color: var(--font-white);
+}
+
+#card-simulatore:hover {
+    background-image: url("../imgs/servizi/ready2go.svg");
+    background-position: center;
+}
+
+.servizio-card img {
+    position: absolute;
+    top: -51px;
+    left: 0;
+    width: 198px;
+}
+
+.servizio-card-text {
+    margin-top: 4.5rem;
+    padding: 0 .5rem;
+}
+
+.servizio-card h1 {
+    font-size: 1.25rem;
+    line-height: 50%;
+}
+
+.servizio-card p {
+    margin-top: 1.25rem;
+    font-size: .9rem;
+    margin-bottom: 1.5rem;
+    line-height: 125%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.test-spacer {
+    height: 200rem;
+}
