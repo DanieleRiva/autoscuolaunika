@@ -24,7 +24,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: white;
+    background: var(--color-background-secondary);
 }
 
 /* Handle */
@@ -60,7 +60,7 @@ body {
     border-radius: 20px;
     margin: auto;
     text-decoration: none;
-    opacity: 75%;
+    /* opacity: 75%; */
     box-shadow: 5px 5px 15px var(--font-black);
     transition: all .3s;
 }
@@ -69,13 +69,17 @@ body {
     opacity: 100%;
 }
 
+.header-onscroll {
+    opacity: 75%;
+}
+
 .header a {
     text-decoration: none;
     font-size: 1rem;
     padding: 4px 10px;
     border-radius: 5px;
     border: 2px solid transparent;
-    color: #000;
+    color: black;
     transition: all .3s;
 }
 
@@ -224,14 +228,58 @@ body {
 
 
 
+.chisiamo-section {
+    margin-top: 8vw;
+    background-color: var(--color-primary);
+    height: 52rem;
+    position: relative;
+}
 
+.custom-shape-divider-top-1716672411 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
+.custom-shape-divider-top-1716672411 svg {
+    position: relative;
+    display: block;
+    width: calc(149% + 1.3px);
+    height: 235px;
+}
 
+.custom-shape-divider-top-1716672411 .shape-fill {
+    fill: #FFFFFF;
+}
 
+.section-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
 
+.section-text p {
+    padding: 0 5rem;
+}
 
+.section-text img {
+    width: 60vw;
+    padding-bottom: 100rem;
+}
 
+.left {
+    text-align: left;
+}
 
+.wave-bottom-white {
+    width: 100vw;
+    bottom: 0;
+    position: absolute;
+}
 
 
 .test-spacer {
