@@ -168,6 +168,7 @@ body {
 .servizi-section {
     text-align: center;
     margin-top: 5rem;
+    margin-bottom: 8rem;
 }
 
 .servizi-cards {
@@ -228,19 +229,17 @@ body {
 
 
 
-.chisiamo-section {
-    margin-top: 8vw;
-    background-color: var(--color-primary);
-    height: 52rem;
+/* .sections-container {
     position: relative;
-}
+} */
 
 .custom-shape-divider-top-1716672411 {
     top: 0;
     left: 0;
     width: 100%;
-    overflow: hidden;
     line-height: 0;
+    position: relative;
+    user-select: none;
 }
 
 .custom-shape-divider-top-1716672411 svg {
@@ -254,21 +253,204 @@ body {
     fill: #FFFFFF;
 }
 
-.section-text {
+.section-left {
+    position: relative;
+    height: 50rem;
+    overflow: visible;
+}
+
+.section-right {
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.section-left {
+    background-color: var(--color-primary);
+}
+
+.section-left .section-content {
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.section-left .section-content p,
+.section-right .section-content p {
+    padding: 2rem;
+}
+
+.section-left .section-content img {
+    width: 50vw;
+    /* margin-top: 2rem; */
+}
+
+.section-right .section-content img {
+    width: 50vw;
+    padding-top: 10rem;
+    z-index: 100;
+}
+
+#image-macchina {
+    position: absolute;
+    top: -15rem;
+    width: 50vw;
+    z-index: 100;
+
+}
+
+.section-right .section-content {
+    float: right;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.section-left .section-content p {
+    text-align: left;
+    width: 40vw;
+}
+
+.section-right .section-content p {
+    text-align: right;
+    width: 42vw;
+    color: black;
+}
+
+#image-simulatore {
+    width: 30vw;
+}
+
+.wave-bottom-white {
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
+    user-select: none;
+}
+
+
+
+.maps-section {
+    text-align: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.maps-section h1 {
+    margin-bottom: 3rem;
+}
+
+.maps-section iframe {
+    border-radius: 10px;
+    border: 2px solid transparent;
+    box-shadow: 0px 8px 50px 6px rgba(0, 0, 0, 25%);
+    user-select: none;
+    transition: all .3s;
+}
+
+.maps-section iframe:hover {
+    border-radius: 20px;
+    user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contatti-section {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contatti-logo {
+    text-align: center;
+    margin-inline: auto;
+}
+
+.contatti-logo img {
+    width: 30vw;
+}
+
+.contact-info {
+    background-color: var(--color-primary);
+    width: 43.33vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.contact-item a {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin-left: -24px;
+    transition: all .3s;
+    width: fit-content;
+    border-radius: 40px;
+}
+
+.contact-item a:hover {
+    background-color: var(--color-secondary);
+    color: black;
+    transform: translateY(-3px);
+}
+
+.contact-item a span {
+    margin-left: .5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.contact-info .contact-item img {
+    width: 48px;
+}
+
+/* .section-left .section-text {
+    display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: center;
     color: white;
     font-size: 1.5rem;
+    background-color: var(--color-primary);
+    height: 40rem;
 }
 
-.section-text p {
+.section-text-right {
+    color: black;
+    background-color: white;
+}
+
+.section-text-left p, .section-text-right p {
     padding: 0 5rem;
 }
 
-.section-text img {
+.section-text {
     width: 60vw;
     padding-bottom: 100rem;
+    height: 100%;
 }
 
 .left {
@@ -279,7 +461,7 @@ body {
     width: 100vw;
     bottom: 0;
     position: absolute;
-}
+} */
 
 
 .test-spacer {
