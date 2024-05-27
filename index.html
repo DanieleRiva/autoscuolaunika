@@ -11,15 +11,15 @@
 
 <body>
 
-    <div class="website-wrapper">
+    <div class="website-wrapper" id="home">
 
-        <div id="header" class="header">
-            <a href="#" id="current">Home</a>
-            <a href="#">Servizi</a>
+        <header id="header" class="header">
+            <a href="#home" id="current" class="nav-link">Home</a>
+            <a href="#servizi-section" class="nav-link">Servizi</a>
             <img src="imgs/header/logo.svg">
-            <a href="#">Chi siamo</a>
-            <a href="#">Contatti</a>
-        </div>
+            <a href="#chisiamo-section" class="nav-link">Chi siamo</a>
+            <a href="#contatti-section" class="nav-link">Contatti</a>
+        </header>
 
         <div class="hero-section">
             <img id="hero-background" src="imgs/hero/hero-section-2k.svg">
@@ -29,51 +29,76 @@
                 <h1>Autoscuola <span>UNIKA</span>.</h1>
                 <h1>La tua autoscuola.</h1>
 
-                <a href="#">Scopri</a>
+                <a href="#servizi-section">Continua</a>
             </div>
         </div>
 
-        <div class="servizi-section">
+        <div class="servizi-section" id="servizi-section">
 
             <h1>Ti offriamo i migliori servizi</h1>
 
             <div class="servizi-cards">
-                <div class="servizio-card">
+                <!-- <div class="servizio-card">
                     <img src="imgs/servizi/teoria_icon.svg">
                     <div class="servizio-card-text">
                         <h1>Teoria</h1>
                         <p>Studia teoria della patente per poter guidare in totale consapevolezza.</p>
                     </div>
-                </div>
-
-                <div class="servizio-card">
-                    <img src="imgs/servizi/guida_sicura_icon.svg">
-                    <div class="servizio-card-text">
-                        <h1>Giuda sicura</h1>
-                        <p>Corsi di guida sicura per prepararti al meglio al mondo della strada.</p>
-                    </div>
-                </div>
-
-                <div class="servizio-card" id="card-simulatore">
-                    <img src="imgs/servizi/simulatore_icon.svg">
-                    <div class="servizio-card-text">
-                        <h1>Simulatore</h1>
-                        <p>Prova il simulatore di guida grazie a Ready2Go!</p>
-                    </div>
-                </div>
+                </div> -->
 
                 <div class="servizio-card">
                     <img src="imgs/servizi/patente_icon.svg">
                     <div class="servizio-card-text">
                         <h1>Patente</h1>
-                        <p>Prendi la tua personale patente di guida!</p>
+                        <p>
+                            Prendi la tua patente:<br>
+                            AM, A1, A2, A, B, C, D, E<br><br>
+                            Rinnovo patente e duplicati.
+                        </p>
                     </div>
                 </div>
+
+                <div class="servizio-card card-simulatore">
+                    <img src="imgs/servizi/guida_sicura_icon.svg">
+                    <div class="servizio-card-text">
+                        <h1>Giuda sicura</h1>
+                        <p>Grazie a Ready2Go offriamo corsi di guida sicura gratuiti per prepararti al meglio al mondo
+                            della
+                            strada.</p>
+                    </div>
+                </div>
+
+                <div class="servizio-card card-simulatore">
+                    <img src="imgs/servizi/simulatore_icon.svg">
+                    <div class="servizio-card-text">
+                        <h1>Simulatore</h1>
+                        <p>Grazie a Ready2Go sarai in grado di provare il simulatore di guida.</p>
+                    </div>
+                </div>
+
+                <div class="servizio-card card-simulatore">
+                    <img src="imgs/servizi/tessere_aci_icon.svg">
+                    <div class="servizio-card-text">
+                        <h1>Tessere ACI</h1>
+                        <p>La serenità si muove con te; grazie a Ready2Go offriamo tessere ACI.</p>
+                    </div>
+                </div>
+
+                <div class="servizio-card">
+                    <img src="imgs/servizi/cqc-icon.svg">
+                    <div class="servizio-card-text">
+                        <h1>CQC</h1>
+                        <p>
+                            Forniamo corsi cqc, rinnovo cqc e recupero punti.<br>
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
         </div>
 
-        <div class="sections-container">
+        <div class="sections-container" id="chisiamo-section">
 
             <div class="section-left">
                 <div class="custom-shape-divider-top-1716672411">
@@ -87,10 +112,10 @@
 
                 <div class="section-content">
                     <p>
-                        Siamo lieti di presentarvi l'Autoscuola UNIKA, dove la professionalità e l'attenzione alla
-                        preparazione dei nostri allievi sono al centro di tutto ciò che facciamo. Sappiamo quanto sia
-                        importante sentirsi sicuri e consapevoli alla guida, ed è per questo che ci impegniamo a offrire
-                        un'esperienza formativa di altissima qualità.
+                        Autoscuola Unika nasce dal progetto di tre amici con oltre vent'anni di esperienza nella
+                        gestione dell'ufficio e nella preparazione teorica e pratica degli allievi. <br>
+                        Valery, Asia e Riccardo vi accompagneranno nel vostro percorso dall'iscrizione fino al
+                        conseguimento della patente.
                     </p>
 
                     <img id="image-staff" src="imgs/chisiamo/staff.svg">
@@ -104,7 +129,8 @@
                 <div class="section-content">
 
                     <p>
-                        UNIKA perchè non ci limitiamo a preparare gli allievi per l'esame di guida. Il nostro obiettivo
+                        Perchè UNIKA? UNIKA perchè non ci limitiamo a preparare gli allievi per l'esame di guida. Il
+                        nostro obiettivo
                         è formare conducenti sicuri e consapevoli, pronti ad affrontare la strada con fiducia. La vostra
                         sicurezza è la nostra priorità, e siamo dedicati a fornirvi tutto il supporto necessario per
                         diventare automobilisti eccellenti.
@@ -140,7 +166,7 @@
 
         </div>
 
-        <div class="maps-section">
+        <div class="maps-section" id="contatti-section">
             <h1>
                 Dove trovarci
             </h1>
@@ -151,41 +177,74 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="contatti-section">
+        <!-- <img src="imgs/contatti/contatti section.png" alt=""> -->
 
-            <!-- <img src="imgs/contatti/contatti section.png" alt=""> -->
+        <footer>
 
-            <div class="contatti-logo">
-                <img src="imgs/logo.svg" alt="Autoscuola UNIKA Logo">
+            <div class="contatti-section">
+
+                <div class="contatti-logo">
+                    <img src="imgs/logo.svg" alt="Autoscuola UNIKA Logo">
+                </div>
+
+                <div class="contact-info">
+
+                    <div class="items">
+                        <div class="contact-item">
+                            <a href="tel:+390315008859">
+                                <img src="imgs/contatti/telefono.svg" alt="Phone Icon">
+                                <span>+39 031 5008859</span>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="tel:+393756669242">
+                                <img src="imgs/contatti/cellulare.svg" alt="Phone Icon">
+                                <span>+39 375 666 9242</span>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="mailto:autoscuolaunika@gmail.com" target="_blank">
+                                <img src="imgs/contatti/email.svg" alt="Email Icon">
+                                <span>autoscuolaunika@gmail.com</span>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="https://maps.app.goo.gl/EL6CmGRnWdirJtMZ9" target="_blank">
+                                <img src="imgs/contatti/maps.svg" alt="Location Icon">
+                                <span>Como Viale Massenzio Masia, 79</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- <h1>test</h1> -->
+                </div>
+
             </div>
 
-            <div class="contact-info">
-                <div class="contact-item">
-                    <a href="tel:+39 031 5008859">
-                        <img src="imgs/contatti/telefono.svg" alt="Phone Icon">
-                        <span>+39 031 5008859</span>
-                    </a>
-                </div>
-                <div class="contact-item">
-                    <a href="mailto:autoscuolaunika@gmail.com" target="_blank">
-                        <img src="imgs/contatti/email.svg" alt="Email Icon">
-                        <span>autoscuolaunika@gmail.com</span>
-                    </a>
-                </div>
-                <div class="contact-item">
-                    <a href="https://maps.app.goo.gl/EL6CmGRnWdirJtMZ9" target="_blank">
-                        <img src="imgs/contatti/maps.svg" alt="Location Icon">
-                        <span>Como Viale Massenzio Masia, 79</span>
-                    </a>
-                </div>
+            <div class="legal-stuff">
+                <p>
+                    Sede operativa: Viale Massenzio Masia, 79, (CO) <br>
+                    Sede legale: Viale Massenzio Masia, 79, (CO) <br>
+                    p.iva: 123456789 <br><br>
+                    © 2024 Autoscuola UNIKA <br>
+                    Tutti i diritti riservati. <br>
+                    <a href="https://www.iubenda.com/privacy-policy/24875590"
+                        class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
+                        title="Privacy Policy ">Privacy Policy</a>
+                    <script
+                        type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
+                    <br><br>Sito web sviluppato da:
+                </p>
             </div>
 
-        </div>
+        </footer>
 
 
 
 
-        <div class="test-spacer"></div>
+
+
+        <!-- <div class="test-spacer"></div> -->
 
     </div>
 
@@ -200,6 +259,25 @@
                 document.getElementsByClassName("header")[0].classList.remove("header-onscroll");
             }
         }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('div[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            const changeHeaderState = () => {
+                let index = sections.length;
+
+                while (--index && window.scrollY + 50 < sections[index].offsetTop) { }
+
+                navLinks.forEach((link) => link.classList.remove('active'));
+                if (navLinks[index]) {
+                    navLinks[index].classList.add('active');
+                }
+            };
+
+            changeHeaderState();
+            window.addEventListener('scroll', changeHeaderState);
+        });
     </script>
 </body>
 

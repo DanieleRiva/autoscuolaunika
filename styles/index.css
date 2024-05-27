@@ -6,13 +6,14 @@ body {
     padding: 0;
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 :root {
     --color-background: #fff;
     --color-background-secondary: #454545;
     --color-primary: #4051B0;
-    --color-secondary: #FFE516;
+    --color-secondary: #EBD560;
     --font-black: #000;
     --font-white: #fff;
 }
@@ -42,7 +43,7 @@ body {
     flex-direction: column;
 }
 
-.header {
+header {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -65,7 +66,7 @@ body {
     transition: all .3s;
 }
 
-.header:hover {
+header:hover {
     opacity: 100%;
 }
 
@@ -73,7 +74,7 @@ body {
     opacity: 75%;
 }
 
-.header a {
+header a {
     text-decoration: none;
     font-size: 1rem;
     padding: 4px 10px;
@@ -83,18 +84,18 @@ body {
     transition: all .3s;
 }
 
-.header a:hover {
+header a:hover {
     transform: translateY(-3px);
     background-color: var(--color-primary);
     color: var(--font-white);
     border-radius: 15px;
 }
 
-.header img {
+header img {
     width: 80px;
 }
 
-#current {
+.active {
     border: 2px solid var(--color-primary);
 }
 
@@ -196,10 +197,10 @@ body {
     color: var(--font-white);
 }
 
-#card-simulatore:hover {
+/* .card-simulatore:hover {
     background-image: url("../imgs/servizi/ready2go.svg");
     background-position: center;
-}
+} */
 
 .servizio-card img {
     position: absolute;
@@ -369,11 +370,19 @@ body {
 
 
 
-.contatti-section {
+footer {
     margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.contatti-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: white;
 }
 
 .contatti-logo {
@@ -382,19 +391,26 @@ body {
 }
 
 .contatti-logo img {
-    width: 30vw;
+    width: 25vw;
 }
 
 .contact-info {
     background-color: var(--color-primary);
     width: 43.33vw;
+    border-top-left-radius: 20px;
+    /* border-bottom-left-radius: 20px; */
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.items {
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
 }
 
 .contact-item a {
@@ -407,6 +423,7 @@ body {
     transition: all .3s;
     width: fit-content;
     border-radius: 40px;
+    padding-right: 24px;
 }
 
 .contact-item a:hover {
@@ -426,6 +443,33 @@ body {
 .contact-info .contact-item img {
     width: 48px;
 }
+
+.legal-stuff {
+    padding: 5rem 0;
+    background-color: var(--color-primary);
+    text-align: center;
+}
+
+/* footer {
+    border: 3px solid red;
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* 
+footer {
+    background-color: var(--color-primary);
+} */
+
+
 
 /* .section-left .section-text {
     display: flex;
