@@ -43,6 +43,10 @@ body {
     flex-direction: column;
 }
 
+/* 
+    HEADER
+*/
+
 header {
     position: fixed;
     left: 50%;
@@ -98,6 +102,10 @@ header img {
 .active {
     border: 2px solid var(--color-primary);
 }
+
+/* 
+    HERO
+*/
 
 .hero-section {
     position: relative;
@@ -169,7 +177,7 @@ header img {
 .servizi-section {
     text-align: center;
     margin-top: 5rem;
-    margin-bottom: 8rem;
+    position: relative;
 }
 
 .servizi-cards {
@@ -178,6 +186,8 @@ header img {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 6rem;
+    gap: 2.5rem;
+    padding: 5rem 0;
 }
 
 .servizio-card {
@@ -189,7 +199,7 @@ header img {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     transition: all .3s;
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
 }
 
 .servizio-card:hover {
@@ -224,15 +234,38 @@ header img {
     font-size: .9rem;
     margin-bottom: 1.5rem;
     line-height: 125%;
+    padding: 5px;
 }
 
+/* On screens with width > 2000px */
+@media (min-width: 2000px) {
+    .servizi-section {
+        font-size: 1.5rem;
+        padding: 10rem 0;
+    }
 
+    .servizio-card {
+        width: 256px;
+    }
 
+    .servizio-card img {
+        top: -68px;
+        width: 256px;
+    }
 
+    .servizio-card h1 {
+        font-size: 1.5rem;
+        margin-top: 6rem;
+    }
 
-/* .sections-container {
-    position: relative;
-} */
+    .servizio-card p {
+        font-size: 1.2rem;
+    }
+}
+
+/* 
+    SEZIONI DI PRESENTAZIONE
+*/
 
 .custom-shape-divider-top-1716672411 {
     top: 0;
@@ -247,80 +280,103 @@ header img {
     position: relative;
     display: block;
     width: calc(149% + 1.3px);
-    height: 235px;
+    /* height: 164px; */
 }
 
 .custom-shape-divider-top-1716672411 .shape-fill {
     fill: #FFFFFF;
 }
 
-.section-left {
+/* bottom shape divider for right section */
+
+.custom-shape-divider-bottom-1716931696 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1716931696 svg {
     position: relative;
-    height: 50rem;
+    display: block;
+    width: calc(140% + 1.3px);
+    height: 92px;
+}
+
+.custom-shape-divider-bottom-1716931696 .shape-fill {
+    fill: #4051B0;
+
+}
+
+.section-left-image {
+    position: absolute;
+    right: 32px;
+    bottom: 164px;
+    padding-top: 10vw;
+    width: 60rem;
+}
+
+.section-left {
+    height: auto;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     overflow: visible;
+    background-color: var(--color-primary);
+}
+
+.section-left p,
+.section-right p {
+    width: 40vw;
+    padding: 0 4rem;
+    color: white;
+    font-size: 2.2rem;
+}
+
+.section-left p {
+    text-align: left;
+}
+
+.section-right p {
+    text-align: right;
+    color: black;
+    float: right;
 }
 
 .section-right {
-    height: 30rem;
     overflow: hidden;
     position: relative;
     z-index: 1;
     background-color: transparent;
-}
-
-.section-left {
-    background-color: var(--color-primary);
-}
-
-.section-left .section-content {
+    height: auto;
+    padding-bottom: 10%;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    color: white;
-    padding: 20px;
-    font-size: 1.5rem;
+    text-align: right;
+    justify-content: right;
+    align-items: end;
+    flex-direction: column;
 }
 
-.section-left .section-content p,
-.section-right .section-content p {
-    padding: 2rem;
-}
-
-.section-left .section-content img {
-    width: 50vw;
-    /* margin-top: 2rem; */
-}
-
-.section-right .section-content img {
-    width: 50vw;
-    padding-top: 10rem;
-    z-index: 100;
+#image-staff,
+#image-macchina {
+    width: 50%;
+    bottom: 10vw;
+    user-select: none;
 }
 
 #image-macchina {
     position: absolute;
-    top: -15rem;
-    width: 50vw;
+    width: 45%;
+    top: -15vw;
+    left: 5rem;
     z-index: 100;
-
 }
 
-.section-right .section-content {
-    float: right;
-    color: white;
-    padding: 20px;
-    font-size: 1.5rem;
-}
-
-.section-left .section-content p {
-    text-align: left;
-    width: 40vw;
-}
-
-.section-right .section-content p {
-    text-align: right;
-    width: 42vw;
-    color: black;
+#image-macchina-mobile {
+    display: none;
 }
 
 #image-simulatore {
@@ -334,7 +390,126 @@ header img {
     user-select: none;
 }
 
+.wave-bottom-blue {
+    display: none;
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
+    user-select: none;
+}
 
+/* Sections p font-size responsiveness */
+@media (min-width: 4000px) {
+
+    .section-left p,
+    .section-right p {
+        font-size: 300%;
+    }
+}
+
+@media (max-width: 2900px) {
+
+    .section-left p,
+    .section-right p {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 2050px) {
+
+    .section-left p,
+    .section-right p {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 1750px) {
+
+    .section-left p,
+    .section-right p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1350px) {
+
+    .section-left p,
+    .section-right p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 1250px) {
+
+    .section-left p,
+    .section-right p {
+        font-size: 1rem;
+    }
+}
+
+/* Media query for mobile layout */
+@media (max-width: 1000px) {
+    .custom-shape-divider-top-1716672411 {
+        display: none;
+    }
+
+    .wave-bottom-blue {
+        display: block;
+    }
+
+    .section-left {
+        height: min-content;
+    }
+
+    .section-right {
+        height: min-content;
+    }
+
+    .section-left,
+    .section-right {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        float: none;
+    }
+
+    .section-left p,
+    .section-right p {
+        margin-top: 5rem;
+        width: 90vw;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .section-left-image {
+        position: static;
+        right: auto;
+        bottom: auto;
+        padding-top: 0;
+    }
+
+    #image-staff {
+        position: block;
+        width: 100vw;
+    }
+
+    #image-macchina {
+        display: none;
+    }
+
+    #image-macchina-mobile {
+        width: 90vw;
+        display: block;
+    }
+}
+
+@media (min-width: 2000px) {}
+
+/* 
+    CONTATTI
+*/
 
 .maps-section {
     text-align: center;
@@ -359,16 +534,9 @@ header img {
     user-select: none;
 }
 
-
-
-
-
-
-
-
-
-
-
+/* 
+    FOOTER
+*/
 
 footer {
     margin-top: 10rem;
