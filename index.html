@@ -121,7 +121,7 @@
                     alto livello.
                 </p>
 
-                <img class="section-left-image" id="image-staff" src="imgs/chisiamo/staff.svg">
+                <img class="section-left-image" id="image-staff" src="imgs/chisiamo/staff.png">
 
                 <img class="wave-bottom-white" src="imgs/waves_dividers/white_bottom_wave.svg" draggable="false">
 
@@ -131,24 +131,24 @@
 
                 <!-- <div class="section-content"> -->
 
-                    <p>
-                        Perchè UNIKA? UNIKA perchè non ci limitiamo a preparare gli allievi per l'esame di guida. Il
-                        nostro obiettivo
-                        è formare conducenti sicuri e consapevoli, pronti ad affrontare la strada con fiducia. La vostra
-                        sicurezza è la nostra priorità, e siamo dedicati a fornirvi tutto il supporto necessario per
-                        diventare automobilisti eccellenti.
-                    </p>
+                <p>
+                    Perchè UNIKA? UNIKA perchè non ci limitiamo a preparare gli allievi per l'esame di guida. Il
+                    nostro obiettivo
+                    è formare conducenti sicuri e consapevoli, pronti ad affrontare la strada con fiducia. La vostra
+                    sicurezza è la nostra priorità, e siamo dedicati a fornirvi tutto il supporto necessario per
+                    diventare automobilisti eccellenti.
+                </p>
 
-                    <img id="image-macchina-mobile" src="imgs/chisiamo/macchina.svg">
+                <img id="image-macchina-mobile" src="imgs/chisiamo/macchina.svg">
 
-                    <div class="wave-bottom-blue custom-shape-divider-bottom-1716931696">
-                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                            preserveAspectRatio="none">
-                            <path
-                                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                                class="shape-fill"></path>
-                        </svg>
-                    </div>
+                <div class="wave-bottom-blue custom-shape-divider-bottom-1716931696">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path
+                            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                            class="shape-fill"></path>
+                    </svg>
+                </div>
                 <!-- </div> -->
             </div>
 
@@ -229,7 +229,6 @@
                         </div>
                     </div>
 
-                    <!-- <h1>test</h1> -->
                 </div>
 
             </div>
@@ -241,7 +240,7 @@
                     p.iva: 04128240134 <br><br>
                     © 2024 Autoscuola UNIKA <br>
                     Tutti i diritti riservati. <br>
-                    <a href="https://www.iubenda.com/privacy-policy/24875590"
+                    <a href="https://www.iubenda.com/privacy-policy"
                         class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe "
                         title="Privacy Policy ">Privacy Policy</a>
                     <script
@@ -252,46 +251,9 @@
 
         </footer>
 
-
-
-
-
-
-        <!-- <div class="test-spacer"></div> -->
-
     </div>
 
-
-    <script>
-        window.onscroll = function () { headerOnScroll() };
-
-        function headerOnScroll() {
-            if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-                document.getElementsByClassName("header")[0].classList.add("header-onscroll");
-            } else {
-                document.getElementsByClassName("header")[0].classList.remove("header-onscroll");
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('div[id]');
-            const navLinks = document.querySelectorAll('.nav-link');
-
-            const changeHeaderState = () => {
-                let index = sections.length;
-
-                while (--index && window.scrollY + 50 < sections[index].offsetTop) { }
-
-                navLinks.forEach((link) => link.classList.remove('active'));
-                if (navLinks[index]) {
-                    navLinks[index].classList.add('active');
-                }
-            };
-
-            changeHeaderState();
-            window.addEventListener('scroll', changeHeaderState);
-        });
-    </script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
