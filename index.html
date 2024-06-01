@@ -22,6 +22,28 @@
             <a href="#contatti-section" class="nav-link">Contatti</a>
         </header>
 
+        <div class="mobile-header">
+            <nav id="nav-mobile">
+                <img id="nav-mobile-logo" src="imgs/header/logo.svg">
+
+                <img id="hamburger-btn" src="imgs/header/hamburger_open.svg" alt="Hamburger button"
+                    onclick="hamburgerBtn()">
+            </nav>
+
+            <header id="header-mobile" class="mobile-header-hidden">
+                <a href="#home" id="current" onclick="hamburgerBtn()" class="nav-link">Home</a>
+                <a href="#servizi-section" onclick="hamburgerBtn()" class="nav-link">Servizi</a>
+                <a href="#chisiamo-section" onclick="hamburgerBtn()" class="nav-link">Chi siamo</a>
+                <a href="#contatti-section" onclick="hamburgerBtn()" class="nav-link">Contatti</a>
+            </header>
+
+            <div id="close-header" class="close-header mobile-header-hidden" onclick="hamburgerBtn()">
+
+            </div>
+        </div>
+
+        <div id="nav-mobile-spacer"></div>
+
         <div class="hero-section">
             <img id="hero-background" src="imgs/hero/hero-section-2k.svg">
 
