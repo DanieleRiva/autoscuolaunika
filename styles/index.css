@@ -182,7 +182,7 @@ body {
 .close-header {
     background-color: black;
     opacity: 50%;
-    flex: 50vh;
+    flex: 100vh;
     background: rgba(0, 0, 0, 0.61);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(17.7px);
