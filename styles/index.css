@@ -84,7 +84,6 @@ body {
     font-size: 1rem;
     padding: 4px 10px;
     border-radius: 5px;
-    border: 2px solid transparent;
     color: black;
     transition: all .3s;
 }
@@ -99,6 +98,11 @@ body {
 
 #header img {
     width: 80px;
+}
+
+.nav-link,
+.nav-link-mobile {
+    border: 2px solid transparent;
 }
 
 .active {
@@ -194,17 +198,19 @@ body {
 
 @keyframes closeHeaderFadeIn {
     from {
-        transform: translateY(-100%);
+        /* transform: translateY(-100%);
         background: rgba(0, 0, 0, 0);
         backdrop-filter: blur(0px);
-        -webkit-backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px); */
+        flex: 0vh;
     }
 
     to {
-        transform: translateY(0%);
+        /* transform: translateY(0%);
         background: rgba(0, 0, 0, 0.5);
         backdrop-filter: blur(17.7px);
-        -webkit-backdrop-filter: blur(17.7px);
+        -webkit-backdrop-filter: blur(17.7px); */
+        flex: 100vh;
     }
 }
 

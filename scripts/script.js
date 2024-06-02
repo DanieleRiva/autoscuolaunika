@@ -28,8 +28,12 @@ function hamburgerBtn() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('div[id]');
+    const sections = document.getElementsByClassName('scroll-section');
     const navLinks = document.querySelectorAll('.nav-link');
+    const navLinksMobile = document.querySelectorAll('.nav-link-mobile');
+
+    console.log(sections);
+    console.log(navLinks);
 
     const changeHeaderState = () => {
         let index = sections.length;
@@ -39,6 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.forEach((link) => link.classList.remove('active'));
         if (navLinks[index]) {
             navLinks[index].classList.add('active');
+        }
+
+        navLinksMobile.forEach((link) => link.classList.remove('active'));
+        if (navLinksMobile[index]) {
+            navLinksMobile[index].classList.add('active');
         }
     };
 
