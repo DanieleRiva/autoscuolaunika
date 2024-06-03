@@ -61,12 +61,10 @@ function checkPrivacyPolicy() {
     if (document.querySelector("iframe").src == "about:blank") {
         document.getElementById("map-warning").style.display = "block";
         document.querySelector("iframe").style.visibility = "collapse";
-        document.querySelector("iframe").style.position = "absolute";
     }
     else {
         document.getElementById("map-warning").style.display = "none";
         document.querySelector("iframe").style.visibility = "visible";
-        document.querySelector("iframe").style.position = "static";
     }
 
     window.setInterval(checkPrivacyPolicy, 5000);
