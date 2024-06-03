@@ -622,7 +622,8 @@ body {
 }
 
 #image-simulatore {
-    width: 30vw;
+    width: 25vw;
+    bottom: 124px;
 }
 
 .wave-bottom-white {
