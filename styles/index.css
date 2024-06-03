@@ -746,6 +746,11 @@ body {
         width: 90vw;
         display: block;
     }
+
+    #image-simulatore {
+        width: 50vw;
+        bottom: 0px;
+    }
 }
 
 @media (min-width: 2000px) {}
@@ -776,8 +781,6 @@ body {
     border-radius: 20px;
     user-select: none;
 }
-
-
 
 /* Media query for bigger screens */
 @media (min-width: 3000px) {

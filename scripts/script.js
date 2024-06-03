@@ -1,6 +1,5 @@
 window.onscroll = function () { headerOnScroll() };
-window.onload = function () { resizeHeaderDivider() };
-window.onload = function () { checkPrivacyPolicy() };
+window.onload = function () { onLoad() };
 
 function headerOnScroll() {
     if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
@@ -8,6 +7,11 @@ function headerOnScroll() {
     } else {
         document.getElementsByClassName("header")[0].classList.remove("header-onscroll");
     }
+}
+
+function onLoad() {
+    resizeHeaderDivider();
+    checkPrivacyPolicy();
 }
 
 function resizeHeaderDivider() {
@@ -54,8 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function checkPrivacyPolicy() {
-    console.log(document.querySelector("iframe").src);
-
     if (document.querySelector("iframe").src == "about:blank") {
         document.getElementById("map-warning").style.display = "block";
         document.querySelector("iframe").style.visibility = "collapse";
