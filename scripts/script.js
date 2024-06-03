@@ -1,5 +1,6 @@
 window.onscroll = function () { headerOnScroll() };
 window.onload = function () { resizeHeaderDivider() };
+window.onload = function () { checkPrivacyPolicy() };
 
 function headerOnScroll() {
     if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
@@ -32,9 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
     const navLinksMobile = document.querySelectorAll('.nav-link-mobile');
 
-    console.log(sections);
-    console.log(navLinks);
-
     const changeHeaderState = () => {
         let index = sections.length;
 
@@ -54,3 +52,20 @@ document.addEventListener('DOMContentLoaded', () => {
     changeHeaderState();
     window.addEventListener('scroll', changeHeaderState);
 });
+
+function checkPrivacyPolicy() {
+    console.log(document.querySelector("iframe").src);
+
+    if (document.querySelector("iframe").src == "about:blank") {
+        document.getElementById("map-warning").style.display = "block";
+        document.querySelector("iframe").style.visibility = "collapse";
+        document.querySelector("iframe").style.position = "absolute";
+    }
+    else {
+        document.getElementById("map-warning").style.display = "none";
+        document.querySelector("iframe").style.visibility = "visible";
+        document.querySelector("iframe").style.position = "static";
+    }
+
+    window.setInterval(checkPrivacyPolicy, 5000);
+}

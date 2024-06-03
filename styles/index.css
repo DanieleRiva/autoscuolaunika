@@ -777,6 +777,8 @@ body {
     user-select: none;
 }
 
+
+
 /* Media query for bigger screens */
 @media (min-width: 3000px) {
     .maps-section iframe {
