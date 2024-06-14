@@ -11,7 +11,7 @@ function headerOnScroll() {
 
 function onLoad() {
     resizeHeaderDivider();
-    checkPrivacyPolicy();
+    // checkPrivacyPolicy();
 }
 
 function resizeHeaderDivider() {
@@ -57,15 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', changeHeaderState);
 });
 
-function checkPrivacyPolicy() {
-    if (document.querySelector("iframe").src == "about:blank") {
-        document.getElementById("map-warning").style.display = "block";
-        document.querySelector("iframe").style.visibility = "collapse";
-    }
-    else {
-        document.getElementById("map-warning").style.display = "none";
-        document.querySelector("iframe").style.visibility = "visible";
-    }
+// function checkPrivacyPolicy() {
+//     if (document.querySelector("iframe").src == "about:blank") {
+//         document.getElementById("map-warning").style.display = "block";
+//         document.querySelector("iframe").style.visibility = "collapse";
+//     }
+//     else {
+//         document.getElementById("map-warning").style.display = "none";
+//         document.querySelector("iframe").style.visibility = "visible";
+//     }
 
-    window.setInterval(checkPrivacyPolicy, 5000);
-}
+//     window.setInterval(checkPrivacyPolicy, 5000);
+// }

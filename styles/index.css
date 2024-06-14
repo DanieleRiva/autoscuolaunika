@@ -411,6 +411,10 @@ body {
     SERVIZI
 */
 
+#ready2go-logo {
+    width: 256px;
+}
+
 .servizi-section {
     text-align: center;
     margin-top: 5rem;
@@ -422,7 +426,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 6rem;
+    margin-top: 2.5rem;
     gap: 2.5rem;
     padding: 5rem 0;
 }
@@ -496,12 +500,12 @@ body {
 }
 
 @media (max-width: 760px) {
-    .servizi-section {
+    /* .servizi-section {
         margin-top: 40px;
-    }
+    } */
 
     .servizi-cards {
-        padding-top: 0;
+        padding-top: 3rem;
     }
 }
 
