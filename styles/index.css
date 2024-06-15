@@ -417,7 +417,7 @@ body {
 
 .servizi-section {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
     position: relative;
 }
 
@@ -500,12 +500,16 @@ body {
 }
 
 @media (max-width: 760px) {
-    /* .servizi-section {
-        margin-top: 40px;
-    } */
+    .servizi-section {
+        margin-top: 5rem;
+    }
 
     .servizi-cards {
         padding-top: 3rem;
+    }
+
+    #ready2go-logo {
+        width: 70vw;
     }
 }
 
